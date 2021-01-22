@@ -4,8 +4,8 @@ import React, {useEffect} from "react";
 import {fetchPosts} from "./redux/action-creators";
 
 export default function App() {
-    const counter = useSelector(({counter}) => counter);
-    const posts = useSelector(({posts}) => posts);
+    const {counter} = useSelector(({counter}) => counter);
+    const {posts} = useSelector(({posts}) => posts);
     const dispatch = useDispatch();
 
     useEffect(() => {
