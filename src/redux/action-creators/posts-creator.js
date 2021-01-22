@@ -6,7 +6,6 @@ export const setPostCreator = (payload) => ({ type: set, payload });
 
 export const fetchPosts = () => {
     return async (dispatch) => {
-        console.log('called');
         try {
             const response = await fetch(
                 'https://jsonplaceholder.typicode.com/posts'
